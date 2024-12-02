@@ -11,28 +11,45 @@
         <!-- Main Button -->
         <button id="mainButton" class="main-btn">To: Rex</button>
         <p id="clickIndicator" class="click-indicator">Click this ^</p>
-        
-    <!-- Hidden Dropdown Section -->
-    <div id="dropdownSection" class="hidden">
-        <p class="paragraph-section">Hi King. Know youre going through this tough time but as 2Pac said you're "a soldier". It's hard sometimes to take time and slow down when youre being a care taker, doing your music, earning every dollar, and looking out for people you love. It's never easy being the man of the house when you're always so stressed even when you dont want to see it. Yet you persevere through it all waking up with hope the next morning. And that is exactly how a king would be no? Deplomatic, enthralling, inspiring, looking after the kingdom and warding off danger.
-            As a Gemini you are water and fire; and you can switch when you feel like it. Some times it feels the ocean would drown you but you can also turn the water to vapor. We know you know all of these about yourself; but sometimes it's nice to hear it. So love yourself a little more and look through below while you rest or are stressed:</p>
-        
-        <!-- Button Section -->
-        <div class="button-container">
-            <button class="dropdown-btn" onclick="toggleText('qualities')">Your Best Qualities</button>
-            <p id="qualities" class="dropdown-text hidden">You are kind, intelligent, and resilient. You have such a talent and you're extremely focused. You're strong for not only what you went through but for the way you kept people in your arms. You also look sooo good:</p>
 
-            <button class="dropdown-btn" onclick="toggleText('neverForget')">Never Forget</button>
-            <p id="neverForget" class="dropdown-text hidden">Never forget your strength and the positivity you bring to those around you.</p>
+        <!-- Hidden Dropdown Section -->
+        <div id="dropdownSection" class="hidden">
+            <p class="paragraph-section">
+                Hi King. Know you're going through this tough time, but as 2Pac said you're "a soldier". 
+                It's hard sometimes to take time and slow down when you're being a caretaker, doing your music, earning every dollar, 
+                and looking out for people you love. Yet you persevere through it all waking up with hope the next morning. And that is exactly how a king would be, no? Diplomatic, enthralling, inspiring, looking after the kingdom and warding off danger.
+            </p>
+            <p class="paragraph-section">
+                As a Gemini, you are water and fire; and you can switch when you feel like it. Sometimes it feels the ocean would drown you, but you can also turn the water to vapor. We know you know all of this about yourself; but sometimes it's nice to hear it. 
+                So love yourself a little more and look through below while you rest or are stressed:
+            </p>
+
+            <!-- Button Section -->
+            <div class="button-container">
+                <button class="dropdown-btn" onclick="revealSection('qualitiesPage')">Your Best Qualities</button>
+                <button class="dropdown-btn" onclick="revealSection('neverForgetPage')">Never Forget</button>
+            </div>
+        </div>
+
+    <!-- Revealed Sections -->
+    <div id="qualitiesPage" class="hidden page-section">
+        <h2>Your Best Qualities</h2>
+        <p>You are kind, intelligent, and resilient. You have such a talent and you're extremely focused. You're strong for not only what you went through but for the way you kept people in your arms. You also look sooo good.</p>
+    </div>
+
+    <div id="neverForgetPage" class="hidden page-section">
+        <h2>Never Forget</h2>
+        <p>Never forget your strength and the positivity you bring to those around you. God loves you, your family and friends look up to you. You are adored, respected, and cherished. Your name should always hold the highest value.</p>
+    </div>
+
+        <!-- Image Section -->
+        <div class="image-container">
+            <img src="artR.png" alt="A placeholder image for Rex" id="rexImage">
         </div>
     </div>
 
- <!-- Image Section -->
- <div class="image-container">
-    <img src="artR.png" alt="A placeholder image for Rex" id="rexImage">
-</div>
-</div>
 
     <script src="script.js"></script>
 </body>
 </html>
+

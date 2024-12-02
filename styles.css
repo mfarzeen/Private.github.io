@@ -1,4 +1,4 @@
-/* Body Styling */
+/* General Body Styling */
 body {
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 /* Main Container Styling */
@@ -45,7 +45,6 @@ body {
     animation: fadeInOut 1.5s infinite;
 }
 
-/* Animation for Click Indicator */
 @keyframes fadeInOut {
     0%, 100% {
         opacity: 1;
@@ -61,30 +60,29 @@ body {
 }
 
 #rexImage {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Hidden Dropdown Section Styling */
+/* Hidden Elements */
 .hidden {
     display: none;
 }
 
-/* Paragraph Section Styling */
-.paragraph-section {
-    font-size: 18px;
-    margin: 20px 0;
+/* Page Sections */
+.page-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
     text-align: center;
 }
 
-/* Dropdown Button Styling */
-.button-container {
-    text-align: center;
-}
-
+/* Button Styling */
 .dropdown-btn {
-    background-color: rgb(40, 40, 102);
+    background-color: navy;
     color: white;
     font-size: 16px;
     font-weight: bold;
@@ -100,12 +98,4 @@ body {
     background-color: lightblue;
     color: navy;
     transform: scale(1.05);
-}
-
-/* Dropdown Text Styling */
-.dropdown-text {
-    margin: 10px 0;
-    font-size: 16px;
-    color: white;
-    text-align: center;
 }

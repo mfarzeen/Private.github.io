@@ -1,19 +1,25 @@
-// Toggle visibility of the dropdown section
+// Toggle the visibility of the dropdown section
 document.getElementById("mainButton").addEventListener("click", function () {
     const dropdownSection = document.getElementById("dropdownSection");
     const clickIndicator = document.getElementById("clickIndicator");
 
-    // Show or hide the dropdown section
     dropdownSection.classList.toggle("hidden");
 
-    // Hide the "Click This" indicator when clicked
     if (!dropdownSection.classList.contains("hidden")) {
         clickIndicator.style.display = "none";
     }
 });
 
-// Function to toggle individual dropdown texts
-function toggleText(id) {
-    const text = document.getElementById(id);
-    text.classList.toggle("hidden");
+// Function to reveal the corresponding section
+function revealSection(id) {
+    // Hide all page sections first
+    document.querySelectorAll(".page-section").forEach((section) => {
+        section.classList.add("hidden");
+    });
+
+    // Show the selected section
+    const section = document.getElementById(id);
+    if (section) {
+        section.classList.remove("hidden");
+    }
 }
