@@ -10,16 +10,21 @@ document.getElementById("mainButton").addEventListener("click", function () {
     }
 });
 
-// Function to reveal the corresponding section
+// Function to toggle individual sections
 function revealSection(id) {
-    // Hide all page sections first
-    document.querySelectorAll(".page-section").forEach((section) => {
-        section.classList.add("hidden");
-    });
-
-    // Show the selected section
     const section = document.getElementById(id);
-    if (section) {
+
+    // Check the current state of the section
+    if (section.classList.contains("hidden")) {
+        // Hide all other sections first
+        document.querySelectorAll(".page-section").forEach((sec) => {
+            sec.classList.add("hidden");
+        });
+
+        // Show the selected section
         section.classList.remove("hidden");
+    } else {
+        // Hide the section if it is already visible
+        section.classList.add("hidden");
     }
 }
