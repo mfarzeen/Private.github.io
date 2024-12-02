@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Rex</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Main Button -->
+        <button id="mainButton" class="main-btn">To: Rex</button>
+        <p id="clickIndicator" class="click-indicator">Click this ^</p>
+        
+    <!-- Hidden Dropdown Section -->
+    <div id="dropdownSection" class="hidden">
+        <p class="paragraph-section">Dear Rex, this is a special message just for you. Below are some amazing things to always remember:</p>
+        
+        <!-- Button Section -->
+        <div class="button-container">
+            <button class="dropdown-btn" onclick="toggleText('qualities')">Your Best Qualities</button>
+            <p id="qualities" class="dropdown-text hidden">You are kind, intelligent, and resilient. These qualities make you extraordinary.</p>
+
+            <button class="dropdown-btn" onclick="toggleText('amazing')">You're Amazing</button>
+            <p id="amazing" class="dropdown-text hidden">Rex, your presence lights up the room. Never forget how much you're appreciated.</p>
+
+            <button class="dropdown-btn" onclick="toggleText('neverForget')">Never Forget</button>
+            <p id="neverForget" class="dropdown-text hidden">Never forget your strength and the positivity you bring to those around you.</p>
+        </div>
+    </div>
+
+ <!-- Image Section -->
+ <div class="image-container">
+    <img src="artR.png" alt="A placeholder image for Rex" id="rexImage">
+</div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

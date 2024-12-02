@@ -1,0 +1,111 @@
+/* Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, lightblue, navy);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Main Container Styling */
+.container {
+    text-align: center;
+}
+
+/* Main Button Styling */
+.main-btn {
+    background-color: white;
+    color: navy;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 40px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.main-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Click Indicator Styling */
+.click-indicator {
+    margin-top: 10px;
+    font-size: 16px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    animation: fadeInOut 1.5s infinite;
+}
+
+/* Animation for Click Indicator */
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+/* Image Container */
+.image-container {
+    margin-top: 20px;
+}
+
+#rexImage {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Hidden Dropdown Section Styling */
+.hidden {
+    display: none;
+}
+
+/* Paragraph Section Styling */
+.paragraph-section {
+    font-size: 18px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Dropdown Button Styling */
+.button-container {
+    text-align: center;
+}
+
+.dropdown-btn {
+    background-color: rgb(40, 40, 102);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.dropdown-btn:hover {
+    background-color: lightblue;
+    color: navy;
+    transform: scale(1.05);
+}
+
+/* Dropdown Text Styling */
+.dropdown-text {
+    margin: 10px 0;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
